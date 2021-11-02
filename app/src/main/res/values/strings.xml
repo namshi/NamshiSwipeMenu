@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Swipe Menu Demo</string>
+    <string name="menu_remove">Remove</string>
+</resources>
