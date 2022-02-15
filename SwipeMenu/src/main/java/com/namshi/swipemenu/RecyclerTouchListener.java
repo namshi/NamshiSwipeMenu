@@ -444,7 +444,7 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener, 
                     touchedX = motionEvent.getRawX();
                     touchedY = motionEvent.getRawY();
 
-                    if (shouldIgnoreAction(touchedPosition)) {
+                    if (rView.getChildAt(touchedPosition) == null || shouldIgnoreAction(touchedPosition)) {
                         touchedPosition = RecyclerView.NO_POSITION;
                         return false;   // <-- guard here allows for ignoring events, allowing more than one view type and preventing NPE
                     }
